@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import MySQLdb
 
@@ -10,7 +11,7 @@ connectDb = MySQLdb.connect(host="localhost",
 
 cur = connectDb.cursor()
 
-cur.execute("INSERT INTO posts VALUES(null, 'titulu','bodyyyyy', 1)")
+cur.execute("INSERT INTO posts VALUES(null, 'caçador','bodyyyyy', 1)")
 
 cur.execute("SELECT * FROM posts")
 
